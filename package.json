@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "./src/**/*.{js, jsx}": [
-      "node_modules/.bin/eslint --max-warnings=0 --fix",
+    "./frontend/src/**/*.{js, jsx}": [
+      "./frontend/node_modules/.bin/eslint --max-warnings=0 --fix",
       "prettier --write"
     ]
   },

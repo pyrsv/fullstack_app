@@ -5,13 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "./frontend && yarn lint"
-  },
-  "lint-staged": {
-    "./frontend/src/**/*.{js, jsx}": [
-      "./frontend/node_modules/.bin/eslint --max-warnings=0 --fix",
-      "prettier --write"
-    ]
+    "precommit": "cd ./frontend && yarn lint && cd ../backend && npm run lint"
   },
   "repository": {
     "type": "git",

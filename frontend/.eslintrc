@@ -9,10 +9,16 @@
     "jsx-a11y",
     "prettier"
   ],
+  "settings": {
+    "jest": {
+      "version": 26
+    }
+  },
   "env": {
     "jest/globals": true
   },
   "rules": {
+    "no-unused-vars": 2,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "padding-line-between-statements": [
       "error",
